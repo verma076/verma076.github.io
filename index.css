@@ -30,7 +30,7 @@ html {
 }
 
 /* all similar content styling codes */
-section {
+/* section {
   padding: 100px 0;
 }
 #main_nav_bar{
@@ -41,7 +41,7 @@ section {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
-  /* border: 3px solid red; */
+  border: 3px solid red;
 }
 
 #about,
@@ -53,7 +53,7 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 
-#about .about-content,
+/* #about .about-content,
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content {
@@ -93,10 +93,10 @@ section .title::after {
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
-}
+} */
 
 /* navbar styling */
-#nav-menu {
+/* #nav-menu {
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -104,7 +104,7 @@ section .title::after {
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
   /* border: 4px solid green; */
-}
+/* } 
 
 #nav-menu.sticky {
   padding: 15px 0;
@@ -159,7 +159,7 @@ section .title::after {
 }
 
 /* menu btn styling */
-.menu-btn {
+/* .menu-btn {
   color: #fff;
   font-size: 23px;
   cursor: pointer;
@@ -184,17 +184,17 @@ section .title::after {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
-}
+} */
 
-.scroll-up-btn.show {
+/* .scroll-up-btn.show {
   bottom: 30px;
   opacity: 1;
   pointer-events: auto;
-}
+}  */
 
-.scroll-up-btn:hover {
+/* .scroll-up-btn:hover {
   filter: brightness(90%);
-}
+}  */
 
 /* home section styling */
 .home-2,.home {
@@ -1099,4 +1099,179 @@ footer span a:hover {
     width: 85%;
     /* border: 3px solid red; */
   }
+}
+
+
+
+
+
+
+
+
+
+
+section {
+  padding: 100px 0;
+}
+#main_nav_bar{
+    padding: 0px 0;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+  /* border: 3px solid red; */
+}
+
+#about,
+.services,
+.skills,
+.project,
+.contact,
+footer {
+  font-family: "Poppins", sans-serif;
+}
+
+#about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 220px;
+  height: 3px;
+  background: #FD8A8A;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color:#FD8A8A;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+/* navbar styling */
+#nav-menu {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+  /* border: 4px solid #FD8A8A; */
+}
+
+#nav-menu.sticky {
+  padding: 15px 0;
+  background:black;
+}
+
+#nav-menu .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-menu .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#nav-menu .logo a span {
+  color: #FD8A8A;
+  transition: all 0.3s ease;
+}
+
+#nav-menu.sticky .logo a span {
+  color: #000;
+}
+
+#nav-menu .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+#nav-menu .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+#nav-menu .menu li a:hover {
+  color:  #FD8A8A;
+}
+
+#nav-menu.sticky .menu li a:hover {
+  color: #fff;
+}
+
+#nav-menu.sticky .menu li a {
+  color: #fff;
+}
+
+/* menu btn styling */
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: #000;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color : #582eee;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+  filter: brightness(90%);
 }
